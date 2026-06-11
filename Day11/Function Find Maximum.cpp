@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int maximum(int a, int b){
+    if(a>b) return a;
+    return b;
+}
+int main(){
+    int a, b;
+    cout<<"Enter two numbers: ";
+    cin>>a>>b;
+    cout<<"Maximum = "<<maximum(a,b)<<endl;
+    return 0;
+}
