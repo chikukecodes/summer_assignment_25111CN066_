@@ -15,7 +15,8 @@ int main()
     for(int i=0;i<n;i++)
     {
         if(a[i]==key)
-        { cout<<"Found at index "<<i<<endl; found=1; break; }
+        { cout<<"Found at position "<<i
+            +1<<endl; found=1; break; }
     }
     if(found==0)
         cout<<"Not found"<<endl;
