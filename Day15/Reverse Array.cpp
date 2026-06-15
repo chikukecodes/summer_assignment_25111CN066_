@@ -1,17 +1,30 @@
 #include<iostream>
 using namespace std;
-int main(){
+
+int main()
+{
     int n, a[100];
-    cout<<"Enter size: ";
+    
+    cout<<"Enter the no of elements: ";
     cin>>n;
-    for(int i=0;i<n;i++) cin>>a[i];
+    
+    for(int i=0;i<n;i++) 
+        cin>>a[i];
+    
     int start=0, end=n-1, temp;
+    
     while(start<end){
-        temp=a[start]; a[start]=a[end]; a[end]=temp;
-        start++; end--;
+        temp=a[start]; 
+        a[start]=a[end]; 
+        a[end]=temp;
+        start++; 
+        end--;
     }
     cout<<"Reversed: ";
-    for(int i=0;i<n;i++) cout<<a[i]<<" ";
-    cout<<endl;
+    for(int i=0;i<n;i++) 
+        cout<<a[i]<<" ";
+    
+    cout<<"\n";
+    
     return 0;
 }
