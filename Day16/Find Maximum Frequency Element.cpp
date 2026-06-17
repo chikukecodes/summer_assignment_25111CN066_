@@ -23,6 +23,6 @@ int main(){
         { maxFreq=count; 
          element=a[i]; }
     }
-    cout<<"Max frequency element = "<<element<<" (appears "<<maxFreq<<" times)"<</n";
+    cout<<"Max frequency element = "<<element<<" (appears "<<maxFreq<<" times)"<<"\n";
     return 0;
 }
